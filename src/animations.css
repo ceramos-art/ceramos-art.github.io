@@ -1,0 +1,39 @@
+@keyframes title-thicc {
+    from {font-weight: 600;}
+    to {font-weight: 700;}
+}
+
+@keyframes title-nothicc {
+    from {font-weight: 700;}
+    to {font-weight: 600;}
+}
+
+.title-thicc:hover{
+    animation-name: title-thicc;
+    animation-duration: 500ms;
+}
+
+.title-thicc{
+    animation-name: title-nothicc;
+    animation-duration: 500ms;
+}
+
+@keyframes sub-thicc {
+    from {font-weight: 400;}
+    to {font-weight: 500;}
+}
+
+@keyframes sub-nothicc {
+    from {font-weight: 500;}
+    to {font-weight: 400;}
+}
+
+.sub-thicc:hover{
+    animation-name: sub-thicc;
+    animation-duration: 500ms;
+}
+
+.sub-thicc{
+    animation-name: sub-nothicc;
+    animation-duration: 500ms;
+}
