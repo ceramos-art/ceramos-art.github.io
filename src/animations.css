@@ -1,3 +1,5 @@
+/* Title Thiccner */
+
 @keyframes title-thicc {
     from {font-weight: 600;}
     to {font-weight: 700;}
@@ -10,13 +12,15 @@
 
 .title-thicc:hover{
     animation-name: title-thicc;
-    animation-duration: 500ms;
+    animation-duration: 400ms;
 }
 
 .title-thicc{
     animation-name: title-nothicc;
-    animation-duration: 500ms;
+    animation-duration: 400ms;
 }
+
+/* Subtitle Thiccner */
 
 @keyframes sub-thicc {
     from {font-weight: 400;}
@@ -30,10 +34,57 @@
 
 .sub-thicc:hover{
     animation-name: sub-thicc;
-    animation-duration: 500ms;
+    animation-duration: 400ms;
 }
 
 .sub-thicc{
     animation-name: sub-nothicc;
-    animation-duration: 500ms;
+    animation-duration: 400ms;
+}
+
+/* Button Thiccner */
+
+@keyframes butt-thicc {
+    from {font-weight: 400; font-size: 24px;}
+    to {font-weight: 500; font-size: 25px;}
+}
+
+@keyframes butt-nothicc {
+    from {font-weight: 500; font-size: 25px;}
+    to {font-weight: 400; font-size: 24px;}
+}
+
+.butt-thicc:hover{
+    animation-name: butt-thicc;
+    animation-duration: 300ms;
+    font-weight: 500;
+    /* border-width: 3px; */
+}
+
+.butt-thicc{
+    animation-name: butt-nothicc;
+    animation-duration: 300ms;
+}
+
+/* Navitem Thiccner */
+
+@keyframes nav-thicc {
+    from {font-weight: 400; background-color: transparent;}
+    to {font-weight: 500; background-color: #181818;}
+}
+
+@keyframes nav-nothicc {
+    from {font-weight: 500; background-color: #181818;}
+    to {font-weight: 400; background-color: transparent;}
+}
+
+.nav-thicc:hover{
+    animation-name: nav-thicc;
+    animation-duration: 400ms;
+    background-color: #181818;
+}
+
+.nav-thicc{
+    animation-name: nav-nothicc;
+    animation-duration: 400ms;
 }

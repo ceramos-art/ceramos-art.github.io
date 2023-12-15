@@ -548,26 +548,6 @@ video {
   position: relative;
 }
 
-.top-\[400px\] {
-  top: 400px;
-}
-
-.top-\[200px\] {
-  top: 200px;
-}
-
-.top-\[350px\] {
-  top: 350px;
-}
-
-.bottom-\[30px\] {
-  bottom: 30px;
-}
-
-.bottom-\[35px\] {
-  bottom: 35px;
-}
-
 .bottom-\[40px\] {
   bottom: 40px;
 }
@@ -576,109 +556,93 @@ video {
   top: 170px;
 }
 
+.top-\[350px\] {
+  top: 350px;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
-}
-
-.mt-40 {
-  margin-top: 10rem;
-}
-
-.mt-32 {
-  margin-top: 8rem;
-}
-
-.mt-20 {
-  margin-top: 5rem;
 }
 
 .mt-16 {
   margin-top: 4rem;
 }
 
-.flex {
-  display: flex;
+.mt-14 {
+  margin-top: 3.5rem;
 }
 
-.h-16 {
-  height: 4rem;
+.mt-12 {
+  margin-top: 3rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.flex {
+  display: flex;
 }
 
 .h-12 {
   height: 3rem;
 }
 
-.h-\[500\] {
-  height: 500;
-}
-
-.h-\[500px\] {
-  height: 500px;
-}
-
-.h-\[450px\] {
-  height: 450px;
-}
-
-.h-\[550px\] {
-  height: 550px;
+.h-\[560px\] {
+  height: 560px;
 }
 
 .h-\[600px\] {
   height: 600px;
 }
 
-.h-\[560px\] {
-  height: 560px;
+.h-14 {
+  height: 3.5rem;
 }
 
-.w-\[500\] {
-  width: 500;
+.h-full {
+  height: 100%;
 }
 
-.w-\[500px\] {
-  width: 500px;
-}
-
-.w-\[450px\] {
-  width: 450px;
-}
-
-.w-\[550px\] {
-  width: 550px;
-}
-
-.w-\[600px\] {
-  width: 600px;
+.h-16 {
+  height: 4rem;
 }
 
 .w-\[560px\] {
   width: 560px;
 }
 
-.max-w-6xl {
-  max-width: 72rem;
+.w-\[600px\] {
+  width: 600px;
 }
 
-.flex-col {
-  flex-direction: column;
+.max-w-6xl {
+  max-width: 72rem;
 }
 
 .items-center {
   align-items: center;
 }
 
+.items-stretch {
+  align-items: stretch;
+}
+
 .justify-center {
   justify-content: center;
 }
 
-.rounded-xl {
-  border-radius: 0.75rem;
+.rounded-md {
+  border-radius: 0.375rem;
 }
 
 .border {
   border-width: 1px;
+}
+
+.border-2 {
+  border-width: 2px;
 }
 
 .border-white {
@@ -686,34 +650,9 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.bg-gray-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
-}
-
-.bg-amber-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(245 158 11 / var(--tw-bg-opacity));
-}
-
 .bg-amber-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(251 191 36 / var(--tw-bg-opacity));
-}
-
-.bg-slate-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
-}
-
-.bg-gray-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
-}
-
-.bg-gray-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
 .bg-black {
@@ -721,9 +660,19 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-blue-300 {
+.bg-blue-500 {
   --tw-bg-opacity: 1;
-  background-color: rgb(147 197 253 / var(--tw-bg-opacity));
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
+.bg-gray-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+}
+
+.bg-gray-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
 
 .px-3 {
@@ -736,66 +685,32 @@ video {
   padding-bottom: 0.25rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .text-center {
   text-align: center;
 }
 
-.align-middle {
-  vertical-align: middle;
-}
-
 .font-mont {
   font-family: mont;
-}
-
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
-.text-\[50px\] {
-  font-size: 50px;
-}
-
-.text-\[100px\] {
-  font-size: 100px;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
-.text-8xl {
-  font-size: 6rem;
-  line-height: 1;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-.text-9xl {
-  font-size: 8rem;
-  line-height: 1;
-}
-
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
-
-.text-\[46px\] {
-  font-size: 46px;
-}
-
-.text-\[44px\] {
-  font-size: 44px;
-}
-
-.text-\[40px\] {
-  font-size: 40px;
 }
 
 .text-2xl {
@@ -803,8 +718,18 @@ video {
   line-height: 2rem;
 }
 
-.font-black {
-  font-weight: 900;
+.text-9xl {
+  font-size: 8rem;
+  line-height: 1;
+}
+
+.text-\[40px\] {
+  font-size: 40px;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-semibold {
@@ -831,10 +756,26 @@ video {
   src: url("../resources/Montserrat.ttf");
 }
 
+.hover\:border-\[3\]:hover {
+  border-color: 3;
+}
+
+.hover\:text-\[25px\]:hover {
+  font-size: 25px;
+}
+
 .hover\:font-bold:hover {
   font-weight: 700;
 }
 
 .hover\:font-medium:hover {
   font-weight: 500;
+}
+
+.hover\:tracking-tighter:hover {
+  letter-spacing: -0.05em;
+}
+
+.hover\:tracking-tight:hover {
+  letter-spacing: -0.025em;
 } 
