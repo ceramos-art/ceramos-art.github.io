@@ -35,6 +35,7 @@
 .sub-thicc:hover{
     animation-name: sub-thicc;
     animation-duration: 400ms;
+    font-weight: 500;
 }
 
 .sub-thicc{
@@ -69,22 +70,45 @@
 /* Navitem Thiccner */
 
 @keyframes nav-thicc {
-    from {font-weight: 400; background-color: transparent;}
-    to {font-weight: 500; background-color: #181818;}
+    from {font-weight: 400; color: white;}
+    to {font-weight: 500; color: #ffd468;}
 }
 
 @keyframes nav-nothicc {
-    from {font-weight: 500; background-color: #181818;}
-    to {font-weight: 400; background-color: transparent;}
+    from {font-weight: 500; color: #ffd468;}
+    to {font-weight: 400; color: white;}
 }
 
 .nav-thicc:hover{
     animation-name: nav-thicc;
     animation-duration: 400ms;
-    background-color: #181818;
+    color: #ffd468;
 }
 
 .nav-thicc{
     animation-name: nav-nothicc;
+    animation-duration: 400ms;
+}
+
+/* Tracking police */
+
+@keyframes track-police {
+    from {letter-spacing: 0.05em;}
+    to {letter-spacing: 0.075em;}
+}
+
+@keyframes track-nopolice {
+    from {letter-spacing: 0.075em;}
+    to {letter-spacing: 0.05em;}
+}
+
+.track-pol:hover{
+    animation-name: track-police;
+    animation-duration: 400ms;
+    letter-spacing: 0.075em;
+}
+
+.track-pol{
+    animation-name: track-nopolice;
     animation-duration: 400ms;
 }
