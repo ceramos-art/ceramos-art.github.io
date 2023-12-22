@@ -46,20 +46,20 @@
 /* Button Thiccner */
 
 @keyframes butt-thicc {
-    from {font-weight: 400; font-size: 24px;}
-    to {font-weight: 500; font-size: 25px;}
+    from {font-weight: 400; letter-spacing: 0em;}
+    to {font-weight: 500; letter-spacing: 0.05em;}
 }
 
 @keyframes butt-nothicc {
-    from {font-weight: 500; font-size: 25px;}
-    to {font-weight: 400; font-size: 24px;}
+    from {font-weight: 500; letter-spacing: 0.05em;}
+    to {font-weight: 400; letter-spacing: 0em;}
 }
 
 .butt-thicc:hover{
     animation-name: butt-thicc;
     animation-duration: 300ms;
     font-weight: 500;
-    /* border-width: 3px; */
+    letter-spacing: 0.05em;
 }
 
 .butt-thicc{
@@ -93,22 +93,119 @@
 /* Tracking police */
 
 @keyframes track-police {
-    from {letter-spacing: 0.05em;}
-    to {letter-spacing: 0.075em;}
+    from {letter-spacing: 0.05em; line-height: 20px;}
+    to {letter-spacing: 0.075em; line-height: 22px;}
 }
 
 @keyframes track-nopolice {
-    from {letter-spacing: 0.075em;}
-    to {letter-spacing: 0.05em;}
+    from {letter-spacing: 0.075em; line-height: 22px;}
+    to {letter-spacing: 0.05em; line-height: 20px;}
 }
 
 .track-pol:hover{
     animation-name: track-police;
     animation-duration: 400ms;
     letter-spacing: 0.075em;
+    line-height: 22px;
 }
 
 .track-pol{
     animation-name: track-nopolice;
     animation-duration: 400ms;
+}
+
+/* Glows like gold 1 */
+
+@keyframes glows1 {
+    0% {color: #ffbb0e;}
+    50% {color: #ffdc85;}
+    100% {color: #ffbb0e;}
+}
+
+.glows1{
+    animation-name: glows1;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+}
+
+/* Glows like gold 2 */
+
+@keyframes glows2 {
+    0% {color: #ffbb0e;}
+    50% {color: #ffdc85;}
+    100% {color: #ffbb0e;}
+}
+
+.glows2{
+    animation-name: glows2;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-delay: -1s;
+}
+
+/* Glows like gold 3 */
+
+@keyframes glows3 {
+    0% {color: #ffbb0e;}
+    50% {color: #ffdc85;}
+    100% {color: #ffbb0e;}
+}
+
+.glows3{
+    animation-name: glows3;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-delay: -2s;
+}
+
+/* Glows like gold 4 */
+
+@keyframes glows4 {
+    0% {color: #ffbb0e;}
+    50% {color: #ffdc85;}
+    100% {color: #ffbb0e;}
+}
+
+.glows4{
+    animation-name: glows4;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-delay: -3s;
+}
+
+/* Glows like gold 5 */
+
+@keyframes glows5 {
+    0% {color: #ffbb0e;}
+    50% {color: #ffdc85;}
+    100% {color: #ffbb0e;}
+}
+
+.glows5{
+    animation-name: glows5;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-delay: -4s;
+}
+
+@keyframes boinger {
+    from {transform: scale(1);}
+    to {transform: scale(1.04);}
+}
+
+@keyframes unboinger {
+    from {transform: scale(1.04);}
+    to {transform: scale(1);}
+}
+
+.boing{
+    animation-name: unboinger;
+    animation-duration: 0.4s;
+}
+
+.boing:hover{
+    animation-name: boinger;
+    animation-duration: 0.4s;
+    transform: scale(1.04);
 }
