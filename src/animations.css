@@ -70,24 +70,32 @@
 /* Navitem Thiccner */
 
 @keyframes nav-thicc {
-    from {font-weight: 400; color: white;}
-    to {font-weight: 500; color: #ffd468;}
+    from {font-weight: 400; color: white;
+        padding-left: 12px; padding-right: 12px;}
+    to {font-weight: 500; color: #ffd468;
+        padding-left: 16px; padding-right: 16px;}
 }
 
 @keyframes nav-nothicc {
-    from {font-weight: 500; color: #ffd468;}
-    to {font-weight: 400; color: white;}
+    from {font-weight: 500; color: #ffd468;
+        padding-left: 16px; padding-right: 16px;}
+    to {font-weight: 400; color: white;
+        padding-left: 12px; padding-right: 12px;}
 }
 
 .nav-thicc:hover{
     animation-name: nav-thicc;
     animation-duration: 400ms;
     color: #ffd468;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .nav-thicc{
     animation-name: nav-nothicc;
     animation-duration: 400ms;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 /* Tracking police */
