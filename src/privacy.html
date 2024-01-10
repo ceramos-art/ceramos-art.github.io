@@ -7,27 +7,69 @@
     <link rel="stylesheet" href="../dist/output.css">
     <link rel="stylesheet" href="./animations.css">
     <link rel="icon" type="image/png" href="../resources/icon.png">
+    <script>
+        function menuFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 </head>
+
 <body class="font-mont bg-black text-white">
-    <nav class="h-16 text-lg flex items-center">
-        <div class="max-w-6xl sm:flex justify-center mx-auto hidden">
+    <nav class="h-16 text-lg sm:flex hidden items-center">
+        <div class="max-w-6xl flex justify-center mx-auto">
             <a href="./index.html">
                 <div class="nav-thicc hover:font-medium py-2">
                     Home
                 </div>
             </a>
+            <a href="./project.html">
                 <div class="nav-thicc hover:font-medium py-2">
                     The Project
                 </div>
+            </a>
+            <a href="./about.html">
                 <div class="nav-thicc hover:font-medium py-2">
                     About
                 </div>
+            </a>
                 <div class="nav-thicc hover:font-medium py-2">
                     Blog
                 </div>
+            <a href="./contact.html">
                 <div class="nav-thicc hover:font-medium py-2">
                     Contact
                 </div>
+            </a>
+        </div>
+    </nav>
+
+    <nav class="sm:hidden">
+        <div class="text-2xl">
+            <div>
+                <a href="javascript:void(0);" onclick="menuFunction()">
+                    <img src="../resources/hb-menu.png" class="h-14 w-14 p-2" alt="">
+                </a>
+            </div>
+            <div id="myLinks" class="hidden">
+                <a href="./index.html">
+                    <span class="block py-2 pl-6">Home</span>
+                </a>
+                <a href="./project.html">
+                    <span class="block py-2 pl-6">The Project</span>
+                </a>
+                <a href="./about.html">
+                    <span class="block py-2 pl-6">About</span>
+                </a>
+                    <span class="block py-2 pl-6">Blog</span>
+                <a href="./contact.html">
+                    <span class="block py-2 pl-6">Contact</span>
+                </a>
+            </div>
         </div>
     </nav>
 
@@ -235,7 +277,8 @@
     <footer class="text-sm text-center mb-1">
         <div>
             <a href="./tandc.html">Terms and Conditions</a> | 
-            <a href="./privacy.html">Privacy Policy</a> | Contact Us
+            <a href="./privacy.html">Privacy Policy</a> | 
+            <a href="./contact.html">Contact Us</a>
         </div>
         <div>
             Copyright © Ceramos IT Solutions 2024. All Rights Reserved.

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceramos: Contact</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="./animations.css">
+    <link rel="icon" type="image/png" href="../resources/icon.png">
+    <script>
+        function menuFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body class="font-mont bg-black text-white">
+    <nav class="h-16 text-lg sm:flex hidden items-center">
+        <div class="max-w-6xl flex justify-center mx-auto">
+            <a href="./index.html">
+                <div class="nav-thicc hover:font-medium py-2">
+                    Home
+                </div>
+            </a>
+            <a href="./project.html">
+                <div class="nav-thicc hover:font-medium py-2">
+                    The Project
+                </div>
+            </a>
+            <a href="./about.html">
+                <div class="nav-thicc hover:font-medium py-2">
+                    About
+                </div>
+            </a>
+                <div class="nav-thicc hover:font-medium py-2">
+                    Blog
+                </div>
+            <a href="./contact.html">
+                <div class="nav-thicc hover:font-medium py-2">
+                    Contact
+                </div>
+            </a>
+        </div>
+    </nav>
+
+    <nav class="sm:hidden">
+        <div class="text-2xl">
+            <div>
+                <a href="javascript:void(0);" onclick="menuFunction()">
+                    <img src="../resources/hb-menu.png" class="h-14 w-14 p-2" alt="">
+                </a>
+            </div>
+            <div id="myLinks" class="hidden">
+                <a href="./index.html">
+                    <span class="block py-2 pl-6">Home</span>
+                </a>
+                <a href="./project.html">
+                    <span class="block py-2 pl-6">The Project</span>
+                </a>
+                <a href="./about.html">
+                    <span class="block py-2 pl-6">About</span>
+                </a>
+                    <span class="block py-2 pl-6">Blog</span>
+                <a href="./contact.html">
+                    <span class="block py-2 pl-6">Contact</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!--Main-->
+    <div class="max-w-6xl mx-auto mt-5 px-5">
+        
+        <div class="sm:flex space-x-5 my-14">
+            <div class="flex-none">
+                <img src="../resources/47.jpg" alt="Amaya"
+                class="h-72 border-amber-400 border-[20px] m-6">
+            </div>
+            <div class="m-6">
+                <h1 class="text-4xl sm:text-6xl font-bold text-amber-500"><span class="text-white">Come say </span>Hello!</h1>
+                <h2 class="text-2xl sm:text-4xl font-bold text-amber-300 my-4">We'd love to hear from you.</h2>
+                <p class="text-lg font-medium">
+                    You can contact us for any enquiries by email -
+                    <a href="mailto:hello@ceramos.art">
+                        <span class="py-4 pl-2 text-2xl block tracking-wider text-amber-200">hello@ceramos.art</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="sm:flex sm:flex-row-reverse space-x-5 my-14">
+            <div class="flex-none">
+                <img src="../resources/48.jpg" alt="Date"
+                class="h-72 w-72 border-amber-400 border-[20px] m-6">
+            </div>
+            <div class="m-6">
+                <h1 class="text-4xl sm:text-6xl font-bold text-amber-500">
+                    <span class="text-white">It's like a</span> date!
+                </h1>
+                <h2 class="text-2xl sm:text-4xl font-bold text-amber-300 my-4">We want to know all about you.</h2>
+                <p class="text-lg font-medium">
+                    Creating a dedicated website is an interactive process. You set the room. You choose how
+                    you want it to be like. We need names and pictures of your products. Tell us about your
+                    page on Instagram and the products you produce. We'll be honored to be with you during
+                    the process.
+                </p>
+            </div>
+        </div>
+
+    </div>
+ 
+    <footer class="text-sm text-center mb-1">
+        <div>
+            <a href="./tandc.html">Terms and Conditions</a> | 
+            <a href="./privacy.html">Privacy Policy</a> | 
+            <a href="./contact.html">Contact Us</a>
+        </div>
+        <div>
+            Copyright © Ceramos IT Solutions 2024. All Rights Reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
