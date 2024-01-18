@@ -1,0 +1,91 @@
+/* Scrollbar for the whole page */
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+background: #bbb; 
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #999; 
+}
+
+/* The rest of the code */
+
+#cartItems {
+    aspect-ratio: 1;
+    width: 20px;
+}
+
+#img1{
+    width: calc(200px + 20%);
+}
+
+#img2{
+    width: calc(125px + 20%);
+}
+
+#img3{
+    width: calc(170px + 16%);
+}
+
+.batman{
+    text-shadow: 3px 3px 5px black;
+}
+
+.wordSpace1{
+    word-spacing: 1px;
+    letter-spacing: 1px;
+}
+
+.sampleListItem{
+    border-bottom-width: 2px;
+    border-color: rgb(229 231 235);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.sampleListItem.active{
+    border-color: black;
+    color: black;
+    font-weight: 600;
+    cursor: auto;
+}
+
+.sampleListBorder{
+    border-bottom-width: 2px;
+    border-color: rgb(229 231 235);
+    height: 100%;
+}
+
+.itemCard:hover .infoButton{
+    display: flex;
+    opacity: 0.4;
+}
+
+.itemCard:hover .cartButton{
+    display: flex;
+    opacity: 0.4;
+}
+
+.itemCard .infoButton:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.itemCard .cartButton:hover{
+    opacity: 1;
+    cursor: pointer;
+}

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="src/output.css" rel="stylesheet">
+    <link href="src/styles.css" rel="stylesheet">
+</head>
+
+<body class="font-rale">
+
+    <div id="hb1" class="fixed top-0 z-60 bg-white text-lg hidden w-full sm:w-auto
+    rounded-xl shadow-lg pb-3">                     <!-- HB Menu -->
+        <div class="flex items-center">
+            <img src="icons/hb-cross.png" class="h-10 m-4 cursor-pointer" onclick="hb1hide();" alt="">
+            <span class="mx-6">Collections and More</span>
+        </div>
+        <div class="flex items-center justify-center gap-x-2 h-14 hover:bg-gray-100">
+            <img src="icons/hot.png" class="w-2" alt="">
+            <a class="">Hot</a>
+        </div>
+        <div class="flex flex-row-reverse justify-center items-center h-14 hover:bg-gray-100">
+            <img src="icons/new.png" class="w-2" alt="">
+            <a class="">New Products</a>
+        </div>
+        <div class="flex items-center gap-x-2 justify-center h-14 hover:bg-gray-100">
+            <img src="icons/plates.png" class="w-3" alt="">
+            <a class="">Plates</a>
+        </div>
+        <div class="flex items-center gap-x-2 justify-center h-14 hover:bg-gray-100">
+            <img src="icons/tiles.png" class="w-3" alt="">
+            <a class="">Tiles</a>
+        </div>
+        <div class="flex items-center gap-x-2 justify-center h-14 hover:bg-gray-100">
+            <img src="icons/uten.png" class="w-2" alt="">
+            <a class="">Kitchen Utensils</a>
+        </div>
+        <div class="flex items-center justify-center h-14 hover:bg-gray-100">
+            About Us
+        </div>
+        <div class="flex items-center justify-center h-14 hover:bg-gray-100">
+            Help
+        </div>
+    </div>
+
+    <div id="cartList" class="fixed right-0 top-0 z-60 bg-white text-lg hidden w-full sm:w-100
+    rounded-xl shadow-lg pb-3">                     <!-- Shopping Cart -->
+        <div class="flex items-center justify-end mr-3 my-4 sm:my-5">
+            <div class="w-full flex justify-center">
+                <span class="">Shopping Cart</span>
+            </div>
+            <img src="icons/cart-cross.png" class="cursor-pointer h-9" onclick="carthide();">
+        </div>
+        <div class="flex items-center justify-center gap-x-2 h-14 hover:bg-gray-100">
+            <img src="icons/hot.png" class="w-2" alt="">
+            <a class="">Hot</a>
+        </div>
+        <div class="flex flex-row-reverse justify-center items-center h-14 hover:bg-gray-100">
+            <img src="icons/new.png" class="w-2" alt="">
+            <a class="">New Products</a>
+        </div>
+    </div>
+
+    <nav class="bg-white hidden lg:flex justify-between items-center shadow-md
+    text-sm fixed right-0 left-0 top-0 z-50 h-20"> <!-- Full Navbar for Large Devices -->
+        <img src="icons/g-name-row.png" class="w-48 px-4 py-2">
+        <div class="flex">
+            <div class="flex items-center px-3 gap-x-2">
+                <img src="icons/hot.png" class="w-2" alt="">
+                <a class="">Hot</a>
+            </div>
+            <div class="flex flex-row-reverse items-center px-3">
+                <img src="icons/new.png" class="w-2" alt="">
+                <a class="">New Products</a>
+            </div>
+            <div class="flex items-center px-3 gap-x-2">
+                <img src="icons/plates.png" class="w-3" alt="">
+                <a class="">Plates</a>
+            </div>
+            <div class="flex items-center px-3 gap-x-2">
+                <img src="icons/tiles.png" class="w-3" alt="">
+                <a class="">Tiles</a>
+            </div>
+            <div class="flex items-center px-3 gap-x-2">
+                <img src="icons/uten.png" class="w-2" alt="">
+                <a class="">Kitchen Utensils</a>
+            </div>
+            <div class="flex items-center px-4">
+                About Us
+            </div>
+            <div class="flex items-center px-4">
+                Help
+            </div>
+            <div class="flex items-center px-3 mx-3 h-9 gap-2 bg-red-500 cursor-pointer
+            rounded-full text-white" onclick="cartshow();">
+                <img src="icons/cart.png" class="w-4" alt="">
+                Cart
+                <div id="cartItems" class="bg-white text-red-500
+                rounded-full text-center leading-none flex items-center justify-center">
+                    0
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="hidden lg:hidden sm:flex justify-between items-center fixed right-0 left-0 top-0
+    bg-white z-50 shadow-md"> <!-- Partial Navbar for Small and Medium Devices -->
+
+        <img src="icons/hb-menu.png" class="h-12 ml-3 p-2 cursor-pointer" alt="" onclick="hb1show();">
+        <img src="icons/g-name-row.png" class="h-20 p-4" alt="">
+        <div class="flex items-center px-3 h-9 mx-3 gap-2 bg-red-500
+            rounded-full text-white cursor-pointer" onclick="cartshow();">
+                <img src="icons/cart.png" class="w-4" alt="">
+                Cart
+                <div id="cartItems" class="bg-white text-red-500
+                rounded-full text-center leading-none flex items-center justify-center">
+                    0
+                </div>
+        </div>
+    </nav>
+
+    <nav class="flex sm:hidden justify-between items-center fixed right-0 left-0 top-0
+    bg-white z-50 shadow-md"> <!-- Partial Navbar for Mobile Devices -->
+
+        <img src="icons/hb-menu.png" class="h-12 ml-3 p-2 cursor-pointer" onclick="hb1show();" alt="">
+        <img src="icons/g-name-row.png" class="h-16 p-3" alt="">
+        <div class="flex items-center px-3 h-9 mx-3 gap-2 bg-red-500
+            rounded-full text-white cursor-pointer" onclick="cartshow();">
+                <img src="icons/cart.png" class="w-4" alt="">
+                Cart
+                <div id="cartItems" class="bg-white text-red-500 rounded-full text-center leading-none
+                 flex items-center justify-center">
+                    0
+                </div>
+        </div>
+    </nav>
+
+    <div class="text-center bg-[#f8f8f8] text-xs h-8 mt-16 sm:mt-20"> <!-- Grey Notification Strip -->
+        
+    </div>
+
+    <div class="font-medium h-125 lg:flex hidden relative"> <!-- Banner on Large Devices -->
+        <img id="img1" src="resources/banner5.jpg" class="rounded-2xl shadow-2xl absolute bottom-0 left-4 z-10">
+        <img id="img2" src="resources/banner2-1.jpg" class="rounded-2xl shadow-2xl absolute top-4 left-[30%]">
+        <div class="absolute bg-white bottom-0 right-[20%] px-8 py-12 rounded-2xl shadow-2xl z-20
+        flex flex-col items-center justify-center space-y-8">
+            <img src="resources/home.jpg" class="rounded-full w-24">
+            <span class="block text-2xl">home is where the heart is</span>
+            <button class="px-10 py-3 bg-teal-500 hover:bg-teal-600 text-white shadow-lg">VISIT GALLERY</button>
+        </div>
+        <img id="img3" src="resources/banner1.jpg" class="rounded-2xl shadow-2xl absolute z-10 top-16 right-4">
+    </div>
+
+    <div class="font-medium h-125 md:flex hidden lg:hidden relative"> <!-- Banner on Medium Devices -->
+        <img id="img1" src="resources/banner5.jpg" class="rounded-2xl shadow-2xl absolute top-8 left-4 z-10">
+        <img id="img2" src="resources/banner2-1.jpg" class="rounded-2xl shadow-2xl absolute top-16 right-6">
+        <div class="absolute bg-white bottom-0 left-[30%] px-8 py-12 rounded-2xl shadow-2xl z-20
+        flex flex-col items-center justify-center space-y-8">
+            <img src="resources/home.jpg" class="rounded-full w-24">
+            <span class="block text-2xl">home is where the heart is</span>
+            <button class="px-10 py-3 bg-teal-500 hover:bg-teal-600 text-white shadow-lg">VISIT GALLERY</button>
+        </div>
+    </div>
+
+    <div class="font-medium mx-3 hidden sm:block md:hidden relative shadow-lg"> <!-- Banner on Small Devices -->
+        <img id="img1-sm" src="resources/banner5.jpg" class="rounded-2xl shadow-2xl">
+        <div class="absolute border-white border-2 top-20 left-4 px-8 py-12 rounded-2xl shadow-2xl z-20
+        flex flex-col items-center justify-center space-y-8">
+            <img src="resources/home.jpg" class="rounded-full w-24 shadow-lg">
+            <span class="block text-2xl text-white batman">home is where the heart is</span>
+            <button class="px-10 py-3 bg-teal-500 hover:bg-teal-600 text-white shadow-lg">VISIT GALLERY</button>
+        </div>
+    </div>
+
+    <div class="font-medium mx-3 sm:hidden relative shadow-lg"> <!-- Banner on Mobile Devices -->
+        <img id="img1-sm" src="resources/banner5.jpg" class="rounded-2xl shadow-2xl">
+        <div class="absolute bottom-2 left-2 px-4 py-4 rounded-2xl shadow-2xl z-20
+        flex items-center justify-center space-x-4">
+            <img src="resources/home.jpg" class="rounded-full w-16 shadow-lg">
+            <div class="flex flex-col space-y-3">
+                <span class="block text-xl text-white batman">home is where<br>the heart is</span> 
+                <button class="px-5 py-3 bg-teal-500 hover:bg-teal-600 text-white shadow-lg text-sm">VISIT GALLERY</button>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="lg:text-4xl md:text-3xl sm:text-2xl text-lg lg:mt-16 md:mt-14 sm:mt-12 mt-10
+    flex flex-col items-center"> <!-- Collections Manifesto -->
+        <span class="block">we've got collections <span class="font-semibold">you'll love!</span></span>
+        <span class="block wordSpace1"><span class="font-semibold">*smiles*</span> if you haven't already</span>
+    </h2>
+
+    <div class="sm:flex justify-center gap-12 text-white tracking-wide font-semibold text-sm
+    lg:mt-12 md:mt-10 sm:mt-8 hidden"> <!-- Collection Buttons -->
+        <button class="bg-teal-500 hover:bg-teal-600 w-60 h-14">FOR THE KITCHEN</button>
+        <button class="bg-teal-500 hover:bg-teal-600 w-60 h-14">FOR THE HOUSE</button>
+    </div>
+
+    <div class="w-full flex lg:mt-14 md:mt-12 sm:mt-10 mt-6 text-gray-400
+    h-14 tracking-widest text-sm sm:text-base"> <!-- Samples Selector: Popular - Sale - New In -->
+        <div class="sampleListBorder flex-1"></div>
+        <div id="button1" class="sampleListItem px-1 w-24 sm:w-72" onclick="button1();">POPULAR</div>
+        <div id="button2" class="sampleListItem px-1 w-24 sm:w-72 active" onclick="button2();">SALE</div>
+        <div id="button3" class="sampleListItem px-1 w-24 sm:w-72" onclick="button3();">NEW IN</div>
+        <div class="sampleListBorder flex-1"></div>
+    </div>
+
+    <div class="mt-5 text-sm overflow-x-scroll"> <!-- Samples Actual Container -->
+ 
+        <div id="popular" class="flex justify-center gap-5 lg:gap-8 xl:gap-16 px-2 pb-3 w-[840px] md:w-auto">
+            <div class="itemCard flex-none rounded-2xl shadow-md overflow-hidden relative">
+                <img src="resources/prod1.jpg" class="w-64 lg:w-80 mb-3">
+                <span class="block font-semibold m-4">Sample Dish 1</span>
+                <span class="block text-gray-600 m-4">Description for Sample Dish 1</span>
+                <span class="block m-4 font-bold">
+                    <span>$65.00</span><span class="ml-5 text-red-600 line-through">$85.00</span>
+                </span>
+                <div class="bg-red-500 rounded-full h-8 w-8 absolute bottom-5 right-5 hidden items-center justify-center cartButton"
+                title="Add item to cart">
+                    <img src="icons/plus.png" class="h-5" >
+                </div>
+                <div class="bg-blue-400 rounded-full h-8 w-8 absolute bottom-18 right-5 hidden items-center justify-center infoButton"
+                title="More information">
+                    <img src="icons/info.png" class="h-5" >
+                </div>
+            </div>
+
+            <div class="itemCard flex-none rounded-2xl shadow-md overflow-hidden relative">
+                <img src="resources/prod2.jpg" class="w-64 lg:w-80 mb-3">
+                <span class="block font-semibold m-4">Sample Dish 2</span>
+                <span class="block text-gray-600 m-4">Description for Sample Dish 2</span>
+                <span class="block m-4 font-bold">
+                    <span>$68.00</span><span class="ml-5 text-red-600 line-through">$88.00</span>
+                </span>
+                <div class="bg-red-500 rounded-full h-8 w-8 absolute bottom-5 right-5 hidden items-center justify-center cartButton"
+                title="Add item to cart">
+                    <img src="icons/plus.png" class="h-5" >
+                </div>
+                <div class="bg-blue-400 rounded-full h-8 w-8 absolute bottom-18 right-5 hidden items-center justify-center infoButton"
+                title="More information">
+                    <img src="icons/info.png" class="h-5" >
+                </div>
+            </div>
+
+            <div class="itemCard flex-none rounded-2xl shadow-md overflow-hidden relative">
+                <img src="resources/prod3.jpg" class="w-64 lg:w-80 mb-3">
+                <span class="block font-semibold m-4">Sample Dish 3</span>
+                <span class="block text-gray-600 m-4">Description for Sample Dish 3</span>
+                <span class="block m-4 font-bold">
+                    <span>$45.00</span><span class="ml-5 text-red-600 line-through">$65.00</span>
+                </span>
+                <div class="bg-red-500 rounded-full h-8 w-8 absolute bottom-5 right-5 hidden items-center justify-center cartButton"
+                title="Add item to cart">
+                    <img src="icons/plus.png" class="h-5" >
+                </div>
+                <div class="bg-blue-400 rounded-full h-8 w-8 absolute bottom-18 right-5 hidden items-center justify-center infoButton"
+                title="More information">
+                    <img src="icons/info.png" class="h-5" >
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+
+
+    <div class="h-[2000px]">
+    </div>
+
+    <div class="fixed bottom-0 left-0 bg-white"> <!-- Size Specifier -->
+        <span class="sm:hidden">Mobile</span>
+        <span class="hidden sm:block md:hidden">Small</span>
+        <span class="hidden md:block lg:hidden">Medium</span>
+        <span class="hidden lg:block xl:hidden">Large</span>
+        <span class="hidden xl:block">X-Large</span>
+    </div>
+    <script src="src/scripts.js"></script>
+</body>
+</html>
