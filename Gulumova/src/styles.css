@@ -72,12 +72,12 @@ background: #999;
 
 .itemCard:hover .infoButton{
     display: flex;
-    opacity: 0.4;
+    opacity: 0.2;
 }
 
 .itemCard:hover .cartButton{
     display: flex;
-    opacity: 0.4;
+    opacity: 0.2;
 }
 
 .itemCard .infoButton:hover{
@@ -88,4 +88,12 @@ background: #999;
 .itemCard .cartButton:hover{
     opacity: 1;
     cursor: pointer;
+}
+
+.itemPhoto:hover + .cardDesc {
+    display: flex;
+}
+
+.cardDesc:hover {
+    display: flex;
 }
