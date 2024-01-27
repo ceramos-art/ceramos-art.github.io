@@ -8,6 +8,7 @@ module.exports = {
         rale:["rale"]
       },
       zIndex:{
+        '55':'55', /** for the smoke screen */
         '60':'60',
         '70':'70',
         '80':'80',

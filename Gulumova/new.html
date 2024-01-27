@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gulumova: home</title>
+    <title>Gulumova: new</title>
     <link href="src/output.css" rel="stylesheet">
     <link href="src/styles.css" rel="stylesheet">
 </head>
@@ -211,78 +211,24 @@
         Item has been successfully added/removed to/from your cart! <!-- Set display to flex to show -->
     </div>
 
-    <div class="font-medium h-125 lg:flex hidden relative"> <!-- Banner on Large Devices -->
-        <img id="img1" src="resources/banner5.jpg" class="rounded-2xl shadow-2xl absolute bottom-0 left-4 z-10">
-        <img id="img2" src="resources/banner2-1.jpg" class="rounded-2xl shadow-2xl absolute top-4 left-[30%]">
-        <div class="absolute bg-white bottom-0 right-[20%] px-8 py-12 rounded-2xl shadow-2xl z-20
-        flex flex-col items-center justify-center space-y-8">
-            <img src="resources/home.jpg" class="rounded-full w-24">
-            <span class="block text-2xl">home is where the heart is</span>
-            <button class="px-10 py-3 bg-teal-500 hover:bg-teal-600 text-white shadow-lg">VISIT GALLERY</button>
+    <h2 class="md:text-4xl text-2xl
+    lg:mt-12 md:mt-10 sm:mt-8 mt-6
+    flex justify-center"> <!-- Collections Manifesto -->
+        <img src="resources/new.jpg" alt="" class="rounded-2xl shadow-xl w-24 sm:w-28">
+        <div class="flex flex-col justify-around sm:pl-6 pl-3">
+            <span class="block font-semibold">new products</span>
+            <span class="block">fresh out of the kiln</span>
         </div>
-        <img id="img3" src="resources/banner1.jpg" class="rounded-2xl shadow-2xl absolute z-10 top-16 right-4">
-    </div>
-
-    <div class="font-medium h-125 md:flex hidden lg:hidden relative"> <!-- Banner on Medium Devices -->
-        <img id="img1" src="resources/banner5.jpg" class="rounded-2xl shadow-2xl absolute top-8 left-4 z-10">
-        <img id="img2" src="resources/banner2-1.jpg" class="rounded-2xl shadow-2xl absolute top-16 right-6">
-        <div class="absolute bg-white bottom-0 left-[30%] px-8 py-12 rounded-2xl shadow-2xl z-20
-        flex flex-col items-center justify-center space-y-8">
-            <img src="resources/home.jpg" class="rounded-full w-24">
-            <span class="block text-2xl">home is where the heart is</span>
-            <button class="px-10 py-3 bg-teal-500 hover:bg-teal-600 text-white shadow-lg">VISIT GALLERY</button>
-        </div>
-    </div>
-
-    <div class="font-medium mt-3 mx-3 hidden sm:block md:hidden relative shadow-lg"> <!-- Banner on Small Devices -->
-        <img id="img1-sm" src="resources/banner5.jpg" class="rounded-2xl shadow-2xl">
-        <div class="absolute border-white border-2 top-20 left-4 px-8 py-12 rounded-2xl shadow-2xl z-20
-        flex flex-col items-center justify-center space-y-8">
-            <img src="resources/home.jpg" class="rounded-full w-24 shadow-lg">
-            <span class="block text-2xl text-white batman">home is where the heart is</span>
-            <button class="px-10 py-3 bg-teal-500 hover:bg-teal-600 text-white shadow-lg">VISIT GALLERY</button>
-        </div>
-    </div>
-
-    <div class="font-medium mx-3 mt-3 sm:hidden relative shadow-lg"> <!-- Banner on Mobile Devices -->
-        <img id="img1-sm" src="resources/banner5.jpg" class="rounded-2xl shadow-2xl">
-        <div class="absolute bottom-2 left-2 px-4 py-4 rounded-2xl shadow-2xl z-20
-        flex items-center justify-center space-x-4">
-            <img src="resources/home.jpg" class="rounded-full w-16 shadow-lg">
-            <div class="flex flex-col space-y-3">
-                <span class="block text-xl text-white batman">home is where<br>the heart is</span> 
-                <button class="px-5 py-3 bg-teal-500 hover:bg-teal-600 text-white shadow-lg text-sm">VISIT GALLERY</button>
-            </div>
-        </div>
-    </div>
-
-    <h2 class="lg:text-4xl md:text-3xl sm:text-2xl text-lg lg:mt-16 md:mt-14 sm:mt-12 mt-10
-    flex flex-col items-center"> <!-- Collections Manifesto -->
-        <span class="block">we've got collections <span class="font-semibold">you'll love!</span></span>
-        <span class="block wordSpace1"><span class="font-semibold">*smiles*</span> if you haven't already</span>
     </h2>
 
-    <div class="sm:flex justify-center gap-12 text-white tracking-wide font-semibold text-sm
-    lg:mt-12 md:mt-10 sm:mt-8 hidden"> <!-- Collection Buttons -->
-        <button class="bg-teal-500 hover:bg-teal-600 w-60 h-14">FOR THE KITCHEN</button>
-        <button class="bg-teal-500 hover:bg-teal-600 w-60 h-14">FOR THE HOUSE</button>
-    </div>
+    <div class="flex justify-center">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 px-2 pb-3 w-[336px] sm:w-[548px] md:w-auto
+        gap-5 lg:gap-8 xl:gap-16
+        lg:mt-16 md:mt-14 sm:mt-12 mt-10"> <!-- Items Showcase -->
 
-    <div class="w-full flex lg:mt-14 md:mt-12 sm:mt-10 mt-6 text-gray-400
-    h-14 tracking-widest text-sm sm:text-base"> <!-- Samples Selector: Popular - Sale - New In -->
-        <div class="sampleListBorder flex-1"></div>
-        <div id="button1" class="sampleListItem px-1 w-24 sm:w-72" onclick="button1();">POPULAR</div>
-        <div id="button2" class="sampleListItem px-1 w-24 sm:w-72 active" onclick="button2();">SALE</div>
-        <div id="button3" class="sampleListItem px-1 w-24 sm:w-72" onclick="button3();">NEW IN</div>
-        <div class="sampleListBorder flex-1"></div>
-    </div>
-
-    <div class="mt-8 text-sm overflow-x-scroll"> <!-- Samples Actual Container -->
- 
-        <div id="popularItems" class="hidden justify-center gap-5 lg:gap-8 xl:gap-16 px-2 pb-3 w-[840px] md:w-auto">
             <div class="itemCard flex-none rounded-2xl shadow-md overflow-hidden relative">
-                <img src="resources/prod1.jpg" class="itemPhoto w-64 lg:w-80 mb-3">
-                <div class="cardDesc absolute top-0 left-0 right-0 h-64 lg:h-80 z-10 p-3 items-center
+                <img src="resources/prod1.jpg" class="itemPhoto w-80 sm:w-64 lg:w-80 mb-3">
+                <div class="cardDesc absolute top-0 left-0 right-0 h-80 sm:h-64 lg:h-80 z-10 p-3 items-center
                 text-white bg-black leading-6 bg-opacity-50 hidden">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit praesentium blanditiis laboriosam
                     deleniti ullam veritatis hic inventore, animi cum exercitationem voluptas facere consequuntur iusto quia
@@ -301,8 +247,8 @@
             </div>
 
             <div class="itemCard flex-none rounded-2xl shadow-md overflow-hidden relative">
-                <img src="resources/prod2.jpg" class="itemPhoto w-64 lg:w-80 mb-3">
-                <div class="cardDesc absolute top-0 left-0 right-0 h-64 lg:h-80 z-10 p-3 items-center
+                <img src="resources/prod2.jpg" class="itemPhoto w-80 sm:w-64 lg:w-80 mb-3">
+                <div class="cardDesc absolute top-0 left-0 right-0 h-80 sm:h-64 lg:h-80 z-10 p-3 items-center
                 text-white bg-black leading-6 bg-opacity-50 hidden">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit praesentium blanditiis laboriosam
                     deleniti ullam veritatis hic inventore, animi cum exercitationem voluptas facere consequuntur iusto quia
@@ -320,8 +266,8 @@
             </div>
 
             <div class="itemCard flex-none rounded-2xl shadow-md overflow-hidden relative">
-                <img src="resources/prod3.jpg" class="itemPhoto w-64 lg:w-80 mb-3">
-                <div class="cardDesc absolute top-0 left-0 right-0 h-64 lg:h-80 z-10 p-3 items-center
+                <img src="resources/prod3.jpg" class="itemPhoto w-80 sm:w-64 lg:w-80 mb-3">
+                <div class="cardDesc absolute top-0 left-0 right-0 h-80 sm:h-64 lg:h-80 z-10 p-3 items-center
                 text-white bg-black leading-6 bg-opacity-50 hidden">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit praesentium blanditiis laboriosam
                     deleniti ullam veritatis hic inventore, animi cum exercitationem voluptas facere consequuntur iusto quia
@@ -337,13 +283,29 @@
                     <img src="icons/plus.png" class="h-5" >
                 </div>
             </div>
-            
-        </div>
 
-        <div id="saleItems" class="flex justify-center gap-5 lg:gap-8 xl:gap-16 px-2 pb-3 w-[840px] md:w-auto">
             <div class="itemCard flex-none rounded-2xl shadow-md overflow-hidden relative">
-                <img src="resources/prod4.jpg" class="itemPhoto w-64 lg:w-80 mb-3">
-                <div class="cardDesc absolute top-0 left-0 right-0 h-64 lg:h-80 z-10 p-3 items-center
+                <img src="resources/prod4.jpg" class="itemPhoto w-80 sm:w-64 lg:w-80 mb-3">
+                <div class="cardDesc absolute top-0 left-0 right-0 h-80 sm:h-64 lg:h-80 z-10 p-3 items-center
+                text-white bg-black leading-6 bg-opacity-50 hidden">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit praesentium blanditiis laboriosam
+                    deleniti ullam veritatis hic inventore, animi cum exercitationem voluptas facere consequuntur iusto quia
+                    dolore nisi, quae alias? Voluptas?
+                </div>
+                <span class="block font-semibold m-4">Sample Dish 4</span>
+                <span class="block text-gray-600 m-4">Description for Sample Dish 4</span>
+                <span class="block m-4 font-bold">
+                    <span>$45.00</span><span class="ml-5 text-red-600 line-through">$65.00</span>
+                </span>
+                <div class="bg-red-500 rounded-full h-8 w-8 absolute bottom-5 right-5 flex lg:hidden
+                items-center justify-center cartButton" title="Add item to cart">
+                    <img src="icons/plus.png" class="h-5" >
+                </div>
+            </div>
+
+            <div class="itemCard flex-none rounded-2xl shadow-md overflow-hidden relative">
+                <img src="resources/prod1.jpg" class="itemPhoto w-80 sm:w-64 lg:w-80 mb-3">
+                <div class="cardDesc absolute top-0 left-0 right-0 h-80 sm:h-64 lg:h-80 z-10 p-3 items-center
                 text-white bg-black leading-6 bg-opacity-50 hidden">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit praesentium blanditiis laboriosam
                     deleniti ullam veritatis hic inventore, animi cum exercitationem voluptas facere consequuntur iusto quia
@@ -362,8 +324,8 @@
             </div>
 
             <div class="itemCard flex-none rounded-2xl shadow-md overflow-hidden relative">
-                <img src="resources/prod5.jpg" class="itemPhoto w-64 lg:w-80 mb-3">
-                <div class="cardDesc absolute top-0 left-0 right-0 h-64 lg:h-80 z-10 p-3 items-center
+                <img src="resources/prod2.jpg" class="itemPhoto w-80 sm:w-64 lg:w-80 mb-3">
+                <div class="cardDesc absolute top-0 left-0 right-0 h-80 sm:h-64 lg:h-80 z-10 p-3 items-center
                 text-white bg-black leading-6 bg-opacity-50 hidden">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit praesentium blanditiis laboriosam
                     deleniti ullam veritatis hic inventore, animi cum exercitationem voluptas facere consequuntur iusto quia
@@ -381,8 +343,46 @@
             </div>
 
             <div class="itemCard flex-none rounded-2xl shadow-md overflow-hidden relative">
-                <img src="resources/prod6.jpg" class="itemPhoto w-64 lg:w-80 mb-3">
-                <div class="cardDesc absolute top-0 left-0 right-0 h-64 lg:h-80 z-10 p-3 items-center
+                <img src="resources/prod3.jpg" class="itemPhoto w-80 sm:w-64 lg:w-80 mb-3">
+                <div class="cardDesc absolute top-0 left-0 right-0 h-80 sm:h-64 lg:h-80 z-10 p-3 items-center
+                text-white bg-black leading-6 bg-opacity-50 hidden">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit praesentium blanditiis laboriosam
+                    deleniti ullam veritatis hic inventore, animi cum exercitationem voluptas facere consequuntur iusto quia
+                    dolore nisi, quae alias? Voluptas?
+                </div>
+                <span class="block font-semibold m-4">Sample Dish 3</span>
+                <span class="block text-gray-600 m-4">Description for Sample Dish 3</span>
+                <span class="block m-4 font-bold">
+                    <span>$45.00</span><span class="ml-5 text-red-600 line-through">$65.00</span>
+                </span>
+                <div class="bg-red-500 rounded-full h-8 w-8 absolute bottom-5 right-5 flex lg:hidden
+                items-center justify-center cartButton" title="Add item to cart">
+                    <img src="icons/plus.png" class="h-5" >
+                </div>
+            </div>
+
+            <div class="itemCard flex-none rounded-2xl shadow-md overflow-hidden relative">
+                <img src="resources/prod4.jpg" class="itemPhoto w-80 sm:w-64 lg:w-80 mb-3">
+                <div class="cardDesc absolute top-0 left-0 right-0 h-80 sm:h-64 lg:h-80 z-10 p-3 items-center
+                text-white bg-black leading-6 bg-opacity-50 hidden">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit praesentium blanditiis laboriosam
+                    deleniti ullam veritatis hic inventore, animi cum exercitationem voluptas facere consequuntur iusto quia
+                    dolore nisi, quae alias? Voluptas?
+                </div>
+                <span class="block font-semibold m-4">Sample Dish 4</span>
+                <span class="block text-gray-600 m-4">Description for Sample Dish 4</span>
+                <span class="block m-4 font-bold">
+                    <span>$45.00</span><span class="ml-5 text-red-600 line-through">$65.00</span>
+                </span>
+                <div class="bg-red-500 rounded-full h-8 w-8 absolute bottom-5 right-5 flex lg:hidden
+                items-center justify-center cartButton" title="Add item to cart">
+                    <img src="icons/plus.png" class="h-5" >
+                </div>
+            </div>
+
+            <div class="itemCard flex-none rounded-2xl shadow-md overflow-hidden relative">
+                <img src="resources/prod3.jpg" class="itemPhoto w-80 sm:w-64 lg:w-80 mb-3">
+                <div class="cardDesc absolute top-0 left-0 right-0 h-80 sm:h-64 lg:h-80 z-10 p-3 items-center
                 text-white bg-black leading-6 bg-opacity-50 hidden">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit praesentium blanditiis laboriosam
                     deleniti ullam veritatis hic inventore, animi cum exercitationem voluptas facere consequuntur iusto quia
@@ -399,126 +399,6 @@
                 </div>
             </div>
             
-        </div>
-
-        <div id="newItems" class="hidden justify-center gap-5 lg:gap-8 xl:gap-16 px-2 pb-3 w-[840px] md:w-auto">
-            <div class="itemCard flex-none rounded-2xl shadow-md overflow-hidden relative">
-                <img src="resources/prod7.jpg" class="itemPhoto w-64 lg:w-80 mb-3">
-                <div class="cardDesc absolute top-0 left-0 right-0 h-64 lg:h-80 z-10 p-3 items-center
-                text-white bg-black leading-6 bg-opacity-50 hidden">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit praesentium blanditiis laboriosam
-                    deleniti ullam veritatis hic inventore, animi cum exercitationem voluptas facere consequuntur iusto quia
-                    dolore nisi, quae alias? Voluptas?
-                </div>
-                <span class="block font-semibold m-4">Sample Dish 1</span>
-                <span class="block text-gray-600 m-4">Description for Sample Dish 1</span>
-                <span class="block m-4 font-bold">
-                    <span>$65.00</span><span class="ml-5 text-red-600 line-through">$85.00</span>
-                </span>
-                <div class="bg-red-500 rounded-full h-8 w-8 absolute bottom-5 right-5 flex lg:hidden
-                items-center justify-center cartButton" title="Add item to cart">
-                    <img src="icons/plus.png" class="h-5" >
-                </div>
-                
-            </div>
-
-            <div class="itemCard flex-none rounded-2xl shadow-md overflow-hidden relative">
-                <img src="resources/prod8.jpg" class="itemPhoto w-64 lg:w-80 mb-3">
-                <div class="cardDesc absolute top-0 left-0 right-0 h-64 lg:h-80 z-10 p-3 items-center
-                text-white bg-black leading-6 bg-opacity-50 hidden">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit praesentium blanditiis laboriosam
-                    deleniti ullam veritatis hic inventore, animi cum exercitationem voluptas facere consequuntur iusto quia
-                    dolore nisi, quae alias? Voluptas?
-                </div>
-                <span class="block font-semibold m-4">Sample Dish 2</span>
-                <span class="block text-gray-600 m-4">Description for Sample Dish 2</span>
-                <span class="block m-4 font-bold">
-                    <span>$68.00</span><span class="ml-5 text-red-600 line-through">$88.00</span>
-                </span>
-                <div class="bg-red-500 rounded-full h-8 w-8 absolute bottom-5 right-5 flex lg:hidden
-                items-center justify-center cartButton" title="Add item to cart">
-                    <img src="icons/plus.png" class="h-5" >
-                </div>
-            </div>
-
-            <div class="itemCard flex-none rounded-2xl shadow-md overflow-hidden relative">
-                <img src="resources/prod9.jpg" class="itemPhoto w-64 lg:w-80 mb-3">
-                <div class="cardDesc absolute top-0 left-0 right-0 h-64 lg:h-80 z-10 p-3 items-center
-                text-white bg-black leading-6 bg-opacity-50 hidden">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit praesentium blanditiis laboriosam
-                    deleniti ullam veritatis hic inventore, animi cum exercitationem voluptas facere consequuntur iusto quia
-                    dolore nisi, quae alias? Voluptas?
-                </div>
-                <span class="block font-semibold m-4">Sample Dish 3</span>
-                <span class="block text-gray-600 m-4">Description for Sample Dish 3</span>
-                <span class="block m-4 font-bold">
-                    <span>$45.00</span><span class="ml-5 text-red-600 line-through">$65.00</span>
-                </span>
-                <div class="bg-red-500 rounded-full h-8 w-8 absolute bottom-5 right-5 flex lg:hidden
-                items-center justify-center cartButton" title="Add item to cart">
-                    <img src="icons/plus.png" class="h-5" >
-                </div>
-            </div>
-            
-        </div>
-
-    </div>
-
-    <h2 class="lg:text-4xl md:text-3xl sm:text-2xl text-lg lg:mt-16 md:mt-14 sm:mt-12 mt-10
-    flex flex-col items-center"> <!-- Packaging Ist Fantastisch Manifesto -->
-        <span class="block tracking-wider font-semibold">indestructable packing</span>
-        <span class="block">prepared for the worst case scenario</span>
-    </h2>
-
-    <div class="overflow-x-scroll"> <!-- Packing Photos -->
-        <div class="flex justify-between px-4 mx-auto lg:w-[980px] w-[750px]
-        lg:mt-16 md:mt-14 sm:mt-12 mt-10">
-            <img src="resources/pack4.jpg" class="rounded-xl shadow-md lg:w-72 w-56">
-            <img src="resources/pack5.jpg" class="rounded-xl shadow-md lg:w-72 w-56">
-            <img src="resources/pack6.jpg" class="rounded-xl shadow-md lg:w-72 w-56">
-        </div>
-    </div>
-
-    <div class="bg-teal-500 py-10 lg:mt-16 md:mt-14 sm:mt-12 mt-10 hidden lg:block"> <!-- Blog article on home decor: Large -->
-        <div class="relative h-[500px] w-[1024px] mx-auto "> 
-            <img src="resources/blog2.jpg" class="absolute w-72 rounded-lg shadow-lg bottom-0 left-0">
-            <img src="resources/blog3.jpg" class="absolute w-[400px] rounded-lg shadow-lg top-0 left-[280px] z-10">
-            <img src="resources/blog1.jpg" class="absolute w-72 rounded-lg shadow-lg right-4 top-[100px]">
-            <div class="h-44 w-[620px] bg-white rounded-lg shadow-lg absolute bottom-0 left-[350px] z-20 p-7
-            flex items-center justify-between">
-                <div>
-                    <span class="block text-2xl tracking-wide font-semibold">elevate your home decor</span>
-                    <span class="block text-xl">a guide to incorporating ceramics</span>
-                </div>
-                <button class="w-44 h-14 bg-teal-500 hover:bg-teal-600 text-white shadow-lg">READ MORE</button>
-            </div>
-        </div>
-    </div>
-
-    <div class="bg-teal-500 py-10 lg:mt-16 md:mt-14 sm:mt-12 mt-10 hidden md:block lg:hidden"> <!-- Blog article on home decor: Medium -->
-        <div class="relative h-[400px] w-[770px] mx-auto ">
-            <img src="resources/blog3.jpg" class="absolute w-[350px] rounded-lg shadow-lg bottom-0 left-0 z-10">
-            <img src="resources/blog1.jpg" class="absolute w-72 rounded-lg shadow-lg right-4 bottom-8">
-            <div class="h-44 w-[620px] bg-white rounded-lg shadow-lg absolute top-0 right-0 z-20 p-7
-            flex items-center justify-between">
-                <div>
-                    <span class="block text-2xl tracking-wide font-semibold">elevate your home decor</span>
-                    <span class="block text-xl">a guide to incorporating ceramics</span>
-                </div>
-                <button class="w-44 h-14 bg-teal-500 hover:bg-teal-600 text-white shadow-lg">READ MORE</button>
-            </div>
-        </div>
-    </div>
-
-    <div class= "relative lg:mt-16 md:mt-14 sm:mt-12 mt-10 block md:hidden">  <!-- Blog article on home decor: Small and Mobile -->
-        <img src="resources/blog1.jpg" class="rounded-lg shadow-lg">
-        <div class="bg-opacity-50 bg-black rounded-lg shadow-lg z-20 p-2 flex flex-col items-center justify-center
-        absolute bottom-0 left-0 right-0">
-            <div class="text-white flex flex-col justify-center">
-                <span class="block text-lg tracking-wide font-semibold my-3">elevate your home decor</span>
-                <span class="block text-base mb-3">a guide to incorporating ceramics</span>
-            </div>
-            <button class="w-44 h-12 bg-teal-500 hover:bg-teal-600 text-white shadow-lg">READ MORE</button>
         </div>
     </div>
 
