@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulumova: checkout</title>
+    <link href="src/output.css" rel="stylesheet">
+    <link href="src/styles.css" rel="stylesheet">
+</head>
+
+<body class="font-rale">
+    <div id="smoke" class="fixed hidden top-0 bottom-0 left-0 right-0 bg-black bg-opacity-50 z-55"
+    onclick="hb1hide(); carthide();"> </div>
+
+    <div id="hb1" class="fixed top-0 z-60 bg-white text-lg hidden w-full sm:w-auto
+    rounded-xl shadow-lg pb-3">                     <!-- HB Menu -->
+        <div class="flex items-center">
+            <img src="icons/hb-cross.png" class="h-10 m-4 cursor-pointer" onclick="hb1hide();" alt="">
+            <span class="mx-6">Collections and More</span>
+        </div>
+        <a href="hot.html">
+            <div class="flex items-center justify-center gap-x-2 h-14 hover:bg-gray-100">
+                <img src="icons/hot.png" class="w-2" alt="">
+                Hot
+            </div>
+        </a>
+        <a href="new.html">
+            <div class="flex flex-row-reverse justify-center items-center h-14 hover:bg-gray-100">
+                <img src="icons/new.png" class="w-2" alt="">
+                New Products
+            </div>
+        </a>
+        <a href="plates.html">
+            <div class="flex items-center gap-x-2 justify-center h-14 hover:bg-gray-100">
+                <img src="icons/plates.png" class="w-3" alt="">
+                Plates
+            </div>
+        </a>
+        <a href="tiles.html">
+            <div class="flex items-center gap-x-2 justify-center h-14 hover:bg-gray-100">
+                <img src="icons/tiles.png" class="w-3" alt="">
+                Tiles
+            </div>
+        </a>
+        <a href="ute.html">
+            <div class="flex items-center gap-x-2 justify-center h-14 hover:bg-gray-100">
+                <img src="icons/uten.png" class="w-2" alt="">
+                Kitchen Utensils
+            </div>
+        </a>
+        <a href="#">
+            <div class="flex items-center justify-center h-14 hover:bg-gray-100">
+                About Us
+            </div>
+        </a>
+        <a href="#">
+            <div class="flex items-center justify-center h-14 hover:bg-gray-100">
+                Help
+            </div>
+        </a>
+    </div>
+
+    <div id="cartList" class="fixed right-0 top-0 z-60 bg-white text-lg hidden w-full sm:w-100
+    rounded-xl shadow-lg pb-3 overflow-y-scroll max-h-[95%]">                     <!-- Shopping Cart -->
+        <div class="flex items-center justify-end mr-3 my-4 sm:my-5">
+            <div class="w-full flex justify-center">
+                <span class="">Shopping Cart</span>
+            </div>
+            <img src="icons/cart-cross.png" class="cursor-pointer h-9" onclick="carthide();">
+        </div>
+
+        <div class="hover:bg-gray-100 h-32 flex items-center itemCard">    <!-- Gray ontainer for each item -->
+            <div class="w-80 mx-auto flex gap-5 relative">                  <!-- Fixed side container for each item -->
+                <img src="resources/prod10.jpg" class="w-24 rounded-lg" alt="">
+                <div class="flex flex-col justify-around">
+                    <span class="block">Item Number 1</span>
+                    <span class="block">
+                        <span>$76.00</span>
+                        <span class="text-red-500 line-through pl-2">$89.00</span>
+                    </span>
+                </div>
+                <img src="icons/removeFromCart.png" title="Remove item from cart"
+                class="w-7 h-7 absolute right-0 top-[34px] lg:hidden cartButton" alt="">
+            </div>
+        </div>
+
+        <div class="hover:bg-gray-100 h-32 flex items-center itemCard">    <!-- Gray ontainer for each item -->
+            <div class="w-80 mx-auto flex gap-5 relative">                  <!-- Fixed side container for each item -->
+                <img src="resources/prod9.jpg" class="w-24 rounded-lg" alt="">
+                <div class="flex flex-col justify-around">
+                    <span class="block">Item Number 1</span>
+                    <span class="block">
+                        <span>$76.00</span>
+                        <span class="text-red-500 line-through pl-2">$89.00</span>
+                    </span>
+                </div>
+                <img src="icons/removeFromCart.png" title="Remove item from cart"
+                class="w-7 h-7 absolute right-0 top-[34px] lg:hidden cartButton" alt="">
+            </div>
+        </div>
+        
+        <div class="text-sm flex flex-col items-center py-3"> <!-- Total - Save - Checkout -->
+            <span class="block">
+                <span class="">which totals to </span>
+                <span class="font-semibold">$189.00</span>
+            </span>
+            <span class="block">
+                <span class="">you've saved </span>
+                <span class="font-semibold text-teal-500">$23.00</span>
+            </span>
+            <button class="bg-red-500 hover:bg-red-600 shadow-lg w-48 h-12 text-white text-base font-semibold mt-4">CHECKOUT</button>
+        </div>
+    </div>
+
+    <nav class="bg-white hidden lg:flex justify-between items-center shadow-md
+    text-sm fixed right-0 left-0 top-0 z-50 h-20"> <!-- Full Navbar for Large Devices -->
+        <a href="index.html">
+            <img src="icons/g-name-row.png" class="w-48 px-4 py-2">
+        </a>
+        <div class="flex items-center">
+            <a href="hot.html">
+                <div class="flex items-center px-3 gap-x-2 hover:bg-stone-50 py-5 rounded-2xl">
+                    <img src="icons/hot.png" class="w-2" alt="">
+                    Hot
+                </div>
+            </a>
+            <a href="new.html">
+                <div class="flex flex-row-reverse items-center px-3 hover:bg-stone-50 h-[60px] rounded-2xl">
+                    <img src="icons/new.png" class="w-2" alt="">
+                    New Products
+                </div>
+            </a>
+            <a href="plates.html">
+                <div class="flex items-center px-3 gap-x-2 hover:bg-stone-50 py-5 rounded-2xl">
+                    <img src="icons/plates.png" class="w-3" alt="">
+                    Plates
+                </div>
+            </a>
+            <a href="tiles.html">
+                <div class="flex items-center px-3 gap-x-2 hover:bg-stone-50 py-5 rounded-2xl">
+                    <img src="icons/tiles.png" class="w-3" alt="">
+                    Tiles
+                </div>
+            </a>
+            <a href="ute.html">
+                <div class="flex items-center px-3 gap-x-2 hover:bg-stone-50 py-5 rounded-2xl">
+                    <img src="icons/uten.png" class="w-2" alt="">
+                    Kitchen Utensils
+                </div>
+            </a>
+            <a href="#">
+                <div class="flex items-center px-4 hover:bg-stone-50 py-5 rounded-2xl">
+                    About Us
+                </div>
+            </a>
+            <a href="#">
+                <div class="flex items-center px-4 hover:bg-stone-50 py-5 rounded-2xl">
+                    Help
+                </div>
+            </a>
+            <div class="flex items-center px-3 mx-3 h-9 gap-2 bg-red-500 cursor-pointer
+            rounded-full text-white" onclick="cartshow();">
+                <img src="icons/cart.png" class="w-4" alt="">
+                Cart
+                <div id="cartItems" class="bg-white text-red-500
+                rounded-full text-center leading-none flex items-center justify-center">
+                    0
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="hidden lg:hidden sm:flex justify-between items-center fixed right-0 left-0 top-0
+    bg-white z-50 shadow-md"> <!-- Partial Navbar for Small and Medium Devices -->
+
+        <img src="icons/hb-menu.png" class="h-12 ml-3 p-2 cursor-pointer" alt="" onclick="hb1show();">
+        <img src="icons/g-name-row.png" class="h-20 p-4" alt="">
+        <div class="flex items-center px-3 h-9 mx-3 gap-2 bg-red-500
+            rounded-full text-white cursor-pointer" onclick="cartshow();">
+                <img src="icons/cart.png" class="w-4" alt="">
+                Cart
+                <div id="cartItems" class="bg-white text-red-500
+                rounded-full text-center leading-none flex items-center justify-center">
+                    0
+                </div>
+        </div>
+    </nav>
+
+    <nav class="flex sm:hidden justify-between items-center fixed right-0 left-0 top-0
+    bg-white z-50 shadow-md"> <!-- Partial Navbar for Mobile Devices -->
+
+        <img src="icons/hb-menu.png" class="h-12 ml-3 p-2 cursor-pointer" onclick="hb1show();" alt="">
+        <img src="icons/g-name-row.png" class="h-16 p-3" alt="">
+        <div class="flex items-center px-3 h-9 mx-3 gap-2 bg-red-500
+            rounded-full text-white cursor-pointer" onclick="cartshow();">
+                <img src="icons/cart.png" class="w-4" alt="">
+                Cart
+                <div id="cartItems" class="bg-white text-red-500 rounded-full text-center leading-none
+                 flex items-center justify-center">
+                    0
+                </div>
+        </div>
+    </nav>
+
+    <div class="bg-[#f8f8f8] text-xs h-8 mt-16 sm:mt-20 flex items-center justify-center"> <!-- Grey Notification Strip -->
+        Shipping Worldwide!
+    </div>
+
+    <div id="notifBar" class="bg-green-200 text-green-700 text-xs h-8 absolute top-16 sm:top-20 left-0 right-0
+    items-center justify-center hidden"> <!-- Green Notification Strip -->
+        Item has been successfully added/removed to/from your cart! <!-- Set display to flex to show -->
+    </div>
+
+    <h2 class="md:text-4xl text-2xl px-2
+    lg:mt-12 md:mt-10 sm:mt-8 mt-6
+    flex justify-center"> <!-- Collections Manifesto -->
+        <img src="resources/checkout.jpg" alt="" class="rounded-2xl shadow-xl w-36 sm:w-44">
+        <div class="flex flex-col justify-center sm:pl-6 pl-3">
+            <span class="block font-semibold">checkout</span>
+            <span class="block mt-2">let's review your order</span>
+        </div>
+    </h2>
+
+    <div class="flex flex-col lg:items-center overflow-y-scroll pb-4
+    lg:mt-14 md:mt-12 sm:mt-10 mt-8">
+
+        <div class="flex rounded-2xl shadow-sm bg-neutral-50 justify-between w-[984px] h-[216px] flex-none mx-5"> <!-- Item in cart -->
+            <div class="flex items-center m-3"> <!-- Numbering -->
+                <div class="w-8 h-8 rounded-full bg-black text-white text-center leading-8 font-bold">
+                    1
+                </div>
+            </div>
+            <div class="flex flex-col justify-between m-3 w-44"> <!-- Basic Info -->
+                <div>
+                    <span class="block text-xs text-neutral-400 font-bold">product code - name</span>
+                    <span class="block font-medium">#104 - Item number 54 blue pretty</span>
+                </div>
+                <div>
+                    <span class="block text-xs text-neutral-400 font-bold">category</span>
+                    <span class="block font-medium">plate</span>
+                </div>
+                <div>
+                    <span class="block text-xs text-neutral-400 font-bold">original price</span>
+                    <span class="block font-medium">$54.00</span>
+                </div>
+            </div>
+            <img src="resources/prod1.jpg" class="w-48 m-3 rounded-2xl"> <!-- Photo -->
+            <div class="m-3 w-56"> <!-- Description -->
+                <span class="block text-xs text-neutral-400 font-bold">item description</span>
+                <span class="block font-medium mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis animi molestias illo unde quis consequatur atque esse!</span>
+            </div>
+            <div class="m-3 w-16 flex flex-col items-center">
+                <span class="block text-xs text-neutral-400 font-bold">discount</span>
+                <div class="flex items-center h-full">
+                    <span class="block font-medium">$3.50</span>
+                </div>
+            </div>
+            <div class="m-3 w-16 flex flex-col items-center">
+                <span class="block text-xs text-neutral-400 font-bold">paid price</span>
+                <div class="flex items-center h-full">
+                    <span class="block font-medium">$50.50</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex rounded-2xl shadow-sm bg-white justify-between w-[984px] h-[216px] flex-none mx-5"> <!-- Item in cart -->
+            <div class="flex items-center m-3"> <!-- Numbering -->
+                <div class="w-8 h-8 rounded-full bg-black text-white text-center leading-8 font-bold">
+                    2
+                </div>
+            </div>
+            <div class="flex flex-col justify-between m-3 w-44"> <!-- Basic Info -->
+                <div>
+                    <span class="block text-xs text-neutral-400 font-bold">product code - name</span>
+                    <span class="block font-medium">#104 - Item number 54 blue pretty</span>
+                </div>
+                <div>
+                    <span class="block text-xs text-neutral-400 font-bold">category</span>
+                    <span class="block font-medium">plate</span>
+                </div>
+                <div>
+                    <span class="block text-xs text-neutral-400 font-bold">original price</span>
+                    <span class="block font-medium">$54.00</span>
+                </div>
+            </div>
+            <img src="resources/prod4.jpg" class="w-48 m-3 rounded-2xl"> <!-- Photo -->
+            <div class="m-3 w-56"> <!-- Description -->
+                <span class="block text-xs text-neutral-400 font-bold">item description</span>
+                <span class="block font-medium mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis animi molestias illo unde quis consequatur atque esse!</span>
+            </div>
+            <div class="m-3 w-16 flex flex-col items-center">
+                <span class="block text-xs text-neutral-400 font-bold">discount</span>
+                <div class="flex items-center h-full">
+                    <span class="block font-medium">$3.50</span>
+                </div>
+            </div>
+            <div class="m-3 w-16 flex flex-col items-center">
+                <span class="block text-xs text-neutral-400 font-bold">paid price</span>
+                <div class="flex items-center h-full">
+                    <span class="block font-medium">$50.50</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex rounded-2xl shadow-sm bg-neutral-50 justify-between w-[984px] h-[216px] flex-none mx-5"> <!-- Item in cart -->
+            <div class="flex items-center m-3"> <!-- Numbering -->
+                <div class="w-8 h-8 rounded-full bg-black text-white text-center leading-8 font-bold">
+                    3
+                </div>
+            </div>
+            <div class="flex flex-col justify-between m-3 w-44"> <!-- Basic Info -->
+                <div>
+                    <span class="block text-xs text-neutral-400 font-bold">product code - name</span>
+                    <span class="block font-medium">#104 - Item number 54 blue pretty</span>
+                </div>
+                <div>
+                    <span class="block text-xs text-neutral-400 font-bold">category</span>
+                    <span class="block font-medium">plate</span>
+                </div>
+                <div>
+                    <span class="block text-xs text-neutral-400 font-bold">original price</span>
+                    <span class="block font-medium">$54.00</span>
+                </div>
+            </div>
+            <img src="resources/prod5.jpg" class="w-48 m-3 rounded-2xl"> <!-- Photo -->
+            <div class="m-3 w-56"> <!-- Description -->
+                <span class="block text-xs text-neutral-400 font-bold">item description</span>
+                <span class="block font-medium mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis animi molestias illo unde quis consequatur atque esse!</span>
+            </div>
+            <div class="m-3 w-16 flex flex-col items-center">
+                <span class="block text-xs text-neutral-400 font-bold">discount</span>
+                <div class="flex items-center h-full">
+                    <span class="block font-medium">$3.50</span>
+                </div>
+            </div>
+            <div class="m-3 w-16 flex flex-col items-center">
+                <span class="block text-xs text-neutral-400 font-bold">paid price</span>
+                <div class="flex items-center h-full">
+                    <span class="block font-medium">$50.50</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <h2 class="md:text-4xl text-2xl px-2
+    lg:mt-12 md:mt-10 sm:mt-8 mt-6
+    flex justify-center"> <!-- Shipping info -->
+        <div class="flex flex-col justify-around sm:pl-6 pl-3">
+            <span class="block font-semibold">we'll now need some details</span>
+            <span class="block mt-2">shipping information</span>
+        </div>
+    </h2>
+
+    <div class="md:flex max-w-5xl mx-auto md:justify-around
+    lg:mt-12 md:mt-10 sm:mt-8 mt-6 mb-10"> <!-- Info Form and Payment -->
+        <div class="flex flex-col items-center">
+            <form action="" method="post" class="md:text-lg" id="orderInfo">
+                
+                <label for="fullName"
+                class="block text-sm text-neutral-400 font-bold mb-2">Full Name</label>
+                <input type="text" name="fullName" id="fullName" spellcheck="false" required maxlength="100"
+                class="block py-2 px-3 border border-neutral-400 rounded-md w-72 md:w-96 mb-4">
+            
+                <label for="add1"
+                class="block text-sm text-neutral-400 font-bold mb-2">Address Line 1</label>
+                <input type="text" name="add1" id="add1" spellcheck="false" required maxlength="100"
+                class="block py-2 px-3 border border-neutral-400 rounded-md w-72 md:w-96 mb-4">
+            
+                <label for="add2"
+                class="block text-sm text-neutral-400 font-bold mb-2">Address Line 2</label>
+                <input type="text" name="add2" id="add2" spellcheck="false" maxlength="100"
+                class="block py-2 px-3 border border-neutral-400 rounded-md w-72 md:w-96 mb-4">
+            
+                <label for="city"
+                class="block text-sm text-neutral-400 font-bold mb-2">City</label>            
+                <input type="text" name="city" id="city" spellcheck="false" required maxlength="50"
+                class="block py-2 px-3 border border-neutral-400 rounded-md w-72 md:w-96 mb-4">
+            
+                <label for="state"
+                class="block text-sm text-neutral-400 font-bold mb-2">State/Province</label>            
+                <input type="text" name="state" id="state" spellcheck="false" required maxlength="50"
+                class="block py-2 px-3 border border-neutral-400 rounded-md w-72 md:w-96 mb-4">
+            
+                <label for="country"
+                class="block text-sm text-neutral-400 font-bold mb-2">Country</label>            
+                <select name="country" id="country" required
+                class="block py-2 px-3 border border-neutral-400 rounded-md w-72 md:w-96 mb-4">
+                    <option value="notChosen" selected disabled>Choose a Country</option>
+                    <option value="australia" >Australia</option>
+                    <option value="austria">Austria</option>
+                    <option value="canada">Canada</option>
+                    <option value="france">France</option>
+                    <option value="germany">Germany</option>
+                    <option value="uae">United Arab Emirates</option>
+                    <option value="usa">United States of America</option>
+                    <option value="uk">United Kingdom</option>
+                </select>
+            
+                <label for="zip"
+                class="block text-sm text-neutral-400 font-bold mb-2">Zip Code</label>            
+                <input type="text" name="zip" id="zip" spellcheck="false" required maxlength="50"
+                class="block py-2 px-3 border border-neutral-400 rounded-md w-72 md:w-96 mb-4">
+
+                <label for="email"
+                class="block text-sm text-neutral-400 font-bold mb-2">Email Address</label>            
+                <input type="email" name="email" id="email" spellcheck="false" required maxlength="100"
+                class="block py-2 px-3 border border-neutral-400 rounded-md w-72 md:w-96 mb-4 placeholder:text-sm"
+                placeholder="your receipt will be sent here">
+
+                <label for="phoneNo"
+                class="block text-sm text-neutral-400 font-bold mb-2">Phone Number</label>            
+                <input type="tel" name="phoneNo" id="phoneNo" spellcheck="false" required maxlength="20"
+                class="block py-2 px-3 border border-neutral-400 rounded-md w-72 md:w-96 mb-4 placeholder:text-sm"
+                placeholder="in case of any delivery issues">
+
+                <input type="hidden" name="paymentMethod" id="paymentMethod" value="usdt">
+                
+            </form>
+        </div>
+        <div class="flex flex-col items-center mt-6">
+            <span class="block text-sm text-neutral-400 font-bold mb-2">
+                items add up to
+            </span>
+            <span class="block text-lg text-neutral-700 font-bold mb-4">
+                $202.56
+            </span>
+            <span class="block text-sm text-neutral-400 font-bold mb-2">
+                shipping
+            </span>
+            <span class="block text-lg text-neutral-700 font-bold mb-4">
+                select your country
+            </span>
+            <span class="block text-sm text-neutral-400 font-bold mb-2">
+                discount
+            </span>
+            <span class="block text-lg text-red-500 font-bold mb-4">
+                $52.26
+            </span>
+            <span class="block text-sm text-neutral-400 font-bold mb-2">
+                total due
+            </span>
+            <span class="block text-2xl text-neutral-700 font-bold mb-4">
+                $140.23
+            </span>
+            <span class="block text-sm text-neutral-400 font-bold mb-2">
+                payment method
+            </span>
+            <div class="flex">
+                <img src="resources/btc-bw.png" class="w-20 p-3 rounded-xl" title="Bitcoin | BTC is currently unavailable">
+                <img src="resources/eth-bw.png" class="w-20 p-3 rounded-xl" title="Ethereum | ETH is currently unavailable">
+                <img src="resources/usdt.png" class="w-20 p-3 rounded-xl cursor-pointer border-2 border-green-500"
+                title="Tether | USDT">
+            </div>
+            <input type="submit" form="orderInfo" value="CONTINUE"
+            class="bg-teal-500 hover:bg-teal-600 w-60 h-14
+            text-white tracking-wide font-semibold text-sm cursor-pointer mt-5">
+        </div>
+    </div>
+
+    <div class="h-52 bg-black text-white hidden sm:block"> <!-- black footer larger than mobile -->
+        <div class="max-w-screen-sm mx-auto pt-5 flex">
+            <div class="px-7 border-r-2 border-white text-gray-500 text-xs flex flex-col items-center gap-4">  
+                <img src="icons/g-name-col-white.png" alt="" class="w-24 ">
+                <span class="block">© all rights reserved - 2024</span>
+                <span class="block">designed by ceramos tech solutions</span>
+            </div>  
+            <div class="pl-7 text-xs text-stone-500">
+                <a class="block font-semibold pb-2 text-white">product categories</a>
+                <a class="block">kitchen utensils</a>
+                <a class="block">kitchen items</a>
+                <a class="block">new products</a>
+                <a class="block">house items</a>
+                <a class="block">plates</a>
+                <a class="block">tiles</a>
+                <a class="block">hot</a>
+            </div>
+            <div class="pl-7 text-xs text-stone-500">
+                <a class="block font-semibold pb-2 text-white">pages</a>
+                <a class="block">who we are</a>
+                <a class="block">who we make them</a>
+                <a class="block">ordering and payment</a>
+                <a class="block">faq</a>
+                <a class="block font-semibold py-2 text-white">our service</a>
+                <a class="block">contact us</a>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="h-32 bg-black text-white sm:hidden"> <!-- black footer - mobile -->
+        <div class="max-w-56 mx-auto pt-5 flex">
+            <div class="text-gray-500 text-xs flex flex-col items-center gap-2">  
+                <img src="icons/g-name-col-white.png" alt="" class="w-16 ">
+                <span class="block">
+                    © all rights reserved - 2024
+                </span>
+                <span class="block">
+                    designed by ceramos tech solutions
+                </span>
+            </div>              
+        </div>
+    </div>
+
+    <div class="fixed bottom-0 left-0 bg-white"> <!-- Size Specifier -->
+        <span class="sm:hidden">Mobile</span>
+        <span class="hidden sm:block md:hidden">Small</span>
+        <span class="hidden md:block lg:hidden">Medium</span>
+        <span class="hidden lg:block xl:hidden">Large</span>
+        <span class="hidden xl:block">X-Large</span>
+    </div>
+    <script src="src/scripts.js"></script>
+</body>
+</html>
