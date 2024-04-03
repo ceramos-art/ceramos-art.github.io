@@ -1,0 +1,70 @@
+@keyframes block {
+    0% {
+        opacity: 0.2;
+    }
+    10% {
+        opacity: 1;
+    }
+    35% {
+        opacity: 1;
+    }
+    45% {
+        opacity: 0.2;
+    }
+    100%{
+        opacity: 0.2;
+    }
+}
+
+.blockman1 {
+    animation: block 10s ease 0s infinite normal backwards;
+}
+.blockman2 {
+    animation: block 10s ease 1s infinite normal backwards;
+}
+.blockman3 {
+    animation: block 10s ease 2s infinite normal backwards;
+}
+.blockman4 {
+    animation: block 10s ease 3s infinite normal backwards;
+}
+.blockman5 {
+    animation: block 10s ease 4s infinite normal backwards;
+}
+.blockman6 {
+    animation: block 10s ease 5s infinite normal backwards;
+}
+.blockman7 {
+    animation: block 10s ease 6s infinite normal backwards;
+}
+.blockman8 {
+    animation: block 10s ease 7s infinite normal backwards;
+}
+
+@keyframes threepiece {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.threepiece1 {
+    animation: threepiece 10s ease 0s infinite normal backwards;
+}
+.threepiece2 {
+    animation: threepiece 10s ease 1s infinite normal backwards;
+}
+.threepiece3 {
+    animation: threepiece 10s ease 2s infinite normal backwards;
+}
