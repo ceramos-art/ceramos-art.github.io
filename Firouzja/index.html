@@ -2,38 +2,164 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="./src/output.css" rel="stylesheet">
-    <link href="./src/styles.css" rel="stylesheet">
+    <link href="./src/output.css" rel="stylesheet" />
+    <link href="./src/styles.css" rel="stylesheet" />
 </head>
 
-<body class="bg-black">
-    <div class="mx-auto">
-        <div class="grid grid-cols-3 justify-items-center w-[400px] gap-1 mb-10">
-            <img src="./media/face/11.png" alt="" class="rounded-lg blockman2">
-            <img src="./media/face/12.png" alt="" class="rounded-lg blockman7">
-            <img src="./media/face/13.png" alt="" class="rounded-lg blockman4">
-            <img src="./media/face/21.png" alt="" class="rounded-lg blockman5">
-            <img src="./media/face/22.png" alt="" class="rounded-lg blockman5">
-            <img src="./media/face/23.png" alt="" class="rounded-lg blockman1">
-            <img src="./media/face/31.png" alt="" class="rounded-lg blockman8">
-            <img src="./media/face/32.png" alt="" class="rounded-lg blockman3">
-            <img src="./media/face/33.png" alt="" class="rounded-lg blockman6">
+<body class="bg-gradient-to-tr from-stone-950 via-black to-stone-900">
+
+    <nav class="h-20 sm:flex hidden items-center mb-6 uppercase"> <!-- Navbar on small and bigger devices -->
+        <div class="max-w-6xl flex justify-center mx-auto">
+            <a href="#">
+                <div class="nav-thicc">
+                    Home
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-thicc">
+                    My Journey
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-thicc">
+                    News
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-thicc">
+                    Interviews
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-thicc">
+                    Q & A
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-thicc">
+                    Contact
+                </div>
+            </a>
         </div>
-        <div class="grid grid-cols-3 justify-items-center w-[400px] gap-1 mb-10">
-            <img src="./media/face/11.png" alt="" class="rounded-lg threepiece1">
-            <img src="./media/face/12.png" alt="" class="rounded-lg threepiece2">
-            <img src="./media/face/13.png" alt="" class="rounded-lg threepiece3">
-            <img src="./media/face/21.png" alt="" class="rounded-lg threepiece2">
-            <img src="./media/face/22.png" alt="" class="rounded-lg threepiece3">
-            <img src="./media/face/23.png" alt="" class="rounded-lg threepiece1">
-            <img src="./media/face/31.png" alt="" class="rounded-lg threepiece3">
-            <img src="./media/face/32.png" alt="" class="rounded-lg threepiece1">
-            <img src="./media/face/33.png" alt="" class="rounded-lg threepiece2">
+    </nav>
+
+    <nav class="sm:hidden uppercase"> <!-- Mobile navbar -->
+        <div class="text-2xl text-white">
+            <div>
+                <a href="javascript:void(0);" onclick="menuFunction()">
+                    <img src="./media/icons/hb-menu.png" class="h-14 w-14 p-2" alt="">
+                </a>
+            </div>
+            <div id="myLinks" class="hidden">
+                <a href="#">
+                    <span class="block py-2 pl-6">Home</span>
+                </a>
+                <a href="#">
+                    <span class="block py-2 pl-6">My Journey</span>
+                </a>
+                <a href="#">
+                    <span class="block py-2 pl-6">News</span>
+                </a>
+                <a href="#">
+                    <span class="block py-2 pl-6">Interviews</span>
+                </a>
+                <a href="#">
+                    <span class="block py-2 pl-6">Q & A</span>
+                </a>
+                <a href="#">
+                    <span class="block py-2 pl-6">Contact</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="flex justify-center items-center gap-20 md:flex-row flex-col"> <!-- Photo animation and name -->
+        <div class="grid grid-cols-3 justify-items-center max-w-[400px] gap-1">
+            <img src="./media/face/011.png" alt="" class="rounded-lg blockman2" />
+            <img src="./media/face/012.png" alt="" class="rounded-lg blockman7" />
+            <img src="./media/face/013.png" alt="" class="rounded-lg blockman4" />
+            <img src="./media/face/021.png" alt="" class="rounded-lg blockman5" />
+            <img src="./media/face/022.png" alt="" class="rounded-lg blockman6" />
+            <img src="./media/face/023.png" alt="" class="rounded-lg blockman1" />
+            <img src="./media/face/031.png" alt="" class="rounded-lg blockman8" />
+            <img src="./media/face/032.png" alt="" class="rounded-lg blockman3" />
+            <img src="./media/face/033.png" alt="" class="rounded-lg blockman9" />
+        </div>
+        <div class="flex flex-col items-center justify-center text-white">
+            <svg class="stroke-white stroke-[10px] fill-transparent h-24" viewBox="100 100 200 200">
+                <path
+                    d="M122 256.491c6.401-1.47 13.689-100.986 15.425-100.986 2.088 0 2.81 13.298 3.085 14.43 2.716 11.291 9.269 24.241 18.509 28.851 11.188 5.579 30.91-33.866 33.936-44.24.08-.274 2.771-13.403 3.857-12.502 10.723 8.915 6.713 69.28 43.961 63.475 22.354-3.483 31.848-59.486 36.25-56.742 1.585.986-1.487 25.394-1.542 26.927-1.014 27.834 2.311 55.114 2.311 82.71-44.424-5.883-89.932-8.705-133.688 0" />
+            </svg>
+            <div class="text-4xl md:text-6xl font-semibold">
+                <span class="bg-red-700 text-3xl md:text-5xl rounded-full px-3">GM</span>
+                ALIREZA
+            </div>
+            <div class="text-4xl md:text-6xl font-semibold">
+                FIROUZJA
+            </div>
+            <div class="text-3xl md:text-4xl mt-8 font-thin">prodigy of the era</div>
         </div>
     </div>
+
+    <div class="inner-shadow mt-16 h-[350px] flex justify-center ">
+        <!-- Quotes and testimonials -->
+        <div class="overflow-x-scroll w-[1090px] flex"> <!-- Container -->
+            <div class="w-80 relative h-full p-10 border-2 border-white rounded-3xl mx-5 flex-none bg-russia">
+                <!-- Quote card -->
+                <div class="text-xl">
+                    "Alireza Firouzja is not just a rising star in the world of chess; he is a shining beacon of
+                    inspiration for young players everywhere."
+                </div>
+                <div class="flex items-center absolute bottom-6 left-6 right-6">
+                    <img src="./media/kasp.png" class="rounded-full w-20 h-20" alt="">
+                    <div>
+                        <span class="block ml-4 font-semibold">GM Garry Kasparov</span>
+                        <span class="block ml-4 text-sm">Former World Chess Champion</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="w-80 relative h-full p-10 border-2 border-white rounded-3xl mx-5 flex-none bg-hungary">
+                <!-- Quote card -->
+                <div class="text-xl">
+                    "Watching Alireza Firouzja play chess is like witnessing a masterpiece unfold before your eyes."
+                </div>
+                <div class="flex items-center absolute bottom-6 left-6 right-6">
+                    <img src="./media/polgar.png" class="rounded-full w-20 h-20" alt="">
+                    <div>
+                        <span class="block ml-4 font-semibold">GM Susan Polgar</span>
+                        <span class="block ml-4 text-sm">Former Women's World Chess Champion</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="w-80 relative h-full p-10 border-2 border-white rounded-3xl mx-5 flex-none bg-usa">
+                <!-- Quote card -->
+                <div class="text-xl">
+                    "It's a pleasure to watch Firouzja play. His creativity and fearlessness make him a true artist on
+                    the chessboard."
+                </div>
+                <div class="flex items-center absolute bottom-6 left-6 right-6">
+                    <img src="./media/lev.png" class="rounded-full w-20 h-20" alt="">
+                    <div>
+                        <span class="block ml-4 font-semibold">GM Levon Aronian</span>
+                        <span class="block ml-4 text-sm">Former World Chess Championship finalist</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="h-screen">
+
+    </div>
+    <script src="./src/scripts.js"></script>
 </body>
 
 </html>

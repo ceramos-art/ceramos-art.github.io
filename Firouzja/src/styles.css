@@ -1,18 +1,39 @@
+/* Scrollbar for the whole page */
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+background: #bbb; 
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #999; 
+}
+
+
 @keyframes block {
     0% {
-        opacity: 0.2;
+        opacity: 0;
     }
     10% {
         opacity: 1;
     }
-    35% {
+    70% {
         opacity: 1;
     }
-    45% {
-        opacity: 0.2;
+    80% {
+        opacity: 0;
     }
     100%{
-        opacity: 0.2;
+        opacity: 0;
     }
 }
 
@@ -20,51 +41,79 @@
     animation: block 10s ease 0s infinite normal backwards;
 }
 .blockman2 {
-    animation: block 10s ease 1s infinite normal backwards;
+    animation: block 10s ease 0.5s infinite normal backwards;
 }
 .blockman3 {
-    animation: block 10s ease 2s infinite normal backwards;
+    animation: block 10s ease 1s infinite normal backwards;
 }
 .blockman4 {
-    animation: block 10s ease 3s infinite normal backwards;
+    animation: block 10s ease 1.5s infinite normal backwards;
 }
 .blockman5 {
-    animation: block 10s ease 4s infinite normal backwards;
+    animation: block 10s ease 2s infinite normal backwards;
 }
 .blockman6 {
-    animation: block 10s ease 5s infinite normal backwards;
+    animation: block 10s ease 2.5s infinite normal backwards;
 }
 .blockman7 {
-    animation: block 10s ease 6s infinite normal backwards;
+    animation: block 10s ease 3s infinite normal backwards;
 }
 .blockman8 {
-    animation: block 10s ease 7s infinite normal backwards;
+    animation: block 10s ease 3.5s infinite normal backwards;
+}
+.blockman9 {
+    animation: block 10s ease 4s infinite normal backwards;
 }
 
-@keyframes threepiece {
-    0% {
-        opacity: 0;
-    }
-    10% {
-        opacity: 1;
-    }
-    60% {
-        opacity: 1;
-    }
-    70% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0;
-    }
+.nav-thicc{
+    transition: 400ms;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 16px;
+    color: white;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
-.threepiece1 {
-    animation: threepiece 10s ease 0s infinite normal backwards;
+.nav-thicc:hover{
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffd468;
+    padding-left: 16px;
+    padding-right: 16px;
 }
-.threepiece2 {
-    animation: threepiece 10s ease 1s infinite normal backwards;
+
+.inner-shadow {
+    position: relative;
+    color: white;
 }
-.threepiece3 {
-    animation: threepiece 10s ease 2s infinite normal backwards;
+
+.inner-shadow::before, .inner-shadow::after {
+    content: '';
+    position: absolute;
+    width: 100px; /* Adjust shadow width as needed */
+    height: 100%;
+    z-index: 5;
+}
+
+.inner-shadow::before {
+    left: 0;
+    top: 0;
+    background: linear-gradient(to right, rgb(0, 0, 0), transparent); /* Shadow color */
+}
+
+.inner-shadow::after {
+    right: 0;
+    top: 0;
+    background: linear-gradient(to left, rgb(0, 0, 0), transparent); /* Shadow color */
+}
+
+.bg-russia {
+    background-image: url('../media/russia.jpg');
+}
+.bg-hungary {
+    background-image: url('../media/hungary.png');
+}
+.bg-usa {
+    background-image: url('../media/usa.jpg');
 }
