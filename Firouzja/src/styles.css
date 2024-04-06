@@ -18,6 +18,10 @@ border-radius: 10px;
 background: #999; 
 }
 
+body {
+    transition: background-color 0.5s ease; /* Smooth transition for background color change */
+  }
+
 
 @keyframes block {
     0% {
@@ -99,13 +103,13 @@ background: #999;
 .inner-shadow::before {
     left: 0;
     top: 0;
-    background: linear-gradient(to right, rgb(0, 0, 0), transparent); /* Shadow color */
+    background: linear-gradient(to right, var(--bg-color, black), transparent); /* Shadow color */
 }
 
 .inner-shadow::after {
     right: 0;
     top: 0;
-    background: linear-gradient(to left, rgb(0, 0, 0), transparent); /* Shadow color */
+    background: linear-gradient(to left, var(--bg-color, black), transparent); /* Shadow color */
 }
 
 .bg-russia {
