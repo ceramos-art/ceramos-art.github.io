@@ -6,21 +6,24 @@
 }
 
 ::-webkit-scrollbar-track {
-border-radius: 10px;
+    border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-background: #bbb; 
-border-radius: 10px;
+    background: #bbb; 
+    border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-background: #999; 
+    background: #999; 
 }
 
 body {
+    background: url('../media/pat2.svg');
+    background-size: 350px;
+    background-repeat: repeat;
     transition: background-color 0.5s ease; /* Smooth transition for background color change */
-  }
+}
 
 
 @keyframes block {
@@ -92,10 +95,10 @@ body {
     color: white;
 }
 
-.inner-shadow::before, .inner-shadow::after {
+/* .inner-shadow::before, .inner-shadow::after {
     content: '';
     position: absolute;
-    width: 100px; /* Adjust shadow width as needed */
+    width: 100px; 
     height: 100%;
     z-index: 5;
 }
@@ -103,21 +106,49 @@ body {
 .inner-shadow::before {
     left: 0;
     top: 0;
-    background: linear-gradient(to right, var(--bg-color, black), transparent); /* Shadow color */
+    background: linear-gradient(to right, var(--bg-color, black), transparent); 
 }
 
 .inner-shadow::after {
     right: 0;
     top: 0;
-    background: linear-gradient(to left, var(--bg-color, black), transparent); /* Shadow color */
+    background: linear-gradient(to left, var(--bg-color, black), transparent); 
+} */
+
+.bg-babol {
+    background-image: url('../media/babol.jpg');
+    background-size: 100%;
+}
+.bg-feat {
+    background-image: url('../media/feat-games.jpg');
+    background-size: 100%;
+}
+.bg-tour {
+    background-image: url('../media/fide.jpg');
+    background-size: 100%;
 }
 
-.bg-russia {
-    background-image: url('../media/russia.jpg');
+.home-button {
+    transition: 0.5s;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    left: 30px;
 }
-.bg-hungary {
-    background-image: url('../media/hungary.png');
+.home-button:hover{
+    letter-spacing: 0.3em;
 }
-.bg-usa {
-    background-image: url('../media/usa.jpg');
+
+.newsObject{
+    color: #bbb;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+.newsObject:hover{
+    color: white;
+
 }
